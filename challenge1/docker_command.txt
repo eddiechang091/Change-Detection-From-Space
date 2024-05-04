@@ -1,1 +1,1 @@
-sudo docker run -it --name webnova --mount "type=bind,src=$(pwd)/template1/input_queue,target=/home/eddiechang091/input_queue" --mount "type=bind,src=$(pwd)/template1/output_queue,target=/home/eddiechang091/output_queue" --mount "type=bind,src=$(pwd)/template1/mission_config,target=/home/eddiechang091/mission_config" webnova_base bash
+sudo docker run -it --name webnova_eddie --mount "type=bind,src=$(pwd)/input_queue,target=/home/eddiechang091/input_queue" webnova_base_eddie bash
