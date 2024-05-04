@@ -9,7 +9,8 @@ RUN mkdir -p /home/eddiechang091/entry_point
 RUN mkdir -p /home/eddiechang091/input_queue
 RUN mkdir -p /home/eddiechang091/output_queue
 ADD run_executable.sh /home/eddiechang091/entry_point
+RUN chmod +x /home/eddiechang091/entry_point/run_executable.sh
 ADD executable.py /home/eddiechang091/entry_point
 ADD mission_config1714441180613.json /home/eddiechang091/mission_config
 WORKDIR /home/eddiechang091/entry_point
-CMD /home/eddiechang091/entry_point/run_executable.sh
+CMD ["/home/eddiechang091/entry_point/run_executable.sh"]
