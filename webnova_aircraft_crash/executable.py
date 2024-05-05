@@ -12,9 +12,9 @@ def load_images(folder):
     for filename in os.listdir(folder):
         img = cv2.imread(os.path.join(folder, filename))
         if img is not None:
-            if "before" in filename:
+            if "_1" in filename:
                 before_images.append((filename, img))
-            elif "after" in filename:
+            elif "_2" in filename:
                 after_images.append((filename, img))
     return before_images, after_images
 

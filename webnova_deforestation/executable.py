@@ -29,8 +29,8 @@ if not os.path.exists(output_folder):
 
 # Identify the before and after images
 files = os.listdir(input_folder)
-before_image_path = next((os.path.join(input_folder, f) for f in files if 'before' in f), None)
-after_image_path = next((os.path.join(input_folder, f) for f in files if 'after' in f), None)
+before_image_path = next((os.path.join(input_folder, f) for f in files if '_1' in f), None)
+after_image_path = next((os.path.join(input_folder, f) for f in files if '_2' in f), None)
 
 # Ensure both images are found
 if before_image_path is None or after_image_path is None:
