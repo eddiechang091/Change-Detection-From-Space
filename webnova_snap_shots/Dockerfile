@@ -10,5 +10,5 @@ RUN useradd -ms /bin/bash eddiechang091 && \
 WORKDIR /home/eddiechang091/entry_point
 COPY run_executable.sh executable.py /home/eddiechang091/entry_point/
 RUN chmod +x run_executable.sh
-COPY mission_config1714441180613.json /home/eddiechang091/mission_config/
+COPY mission_config1714874837046.json /home/eddiechang091/mission_config/
 CMD ["/home/eddiechang091/entry_point/run_executable.sh"]
