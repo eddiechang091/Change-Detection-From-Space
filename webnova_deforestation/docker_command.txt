@@ -1,0 +1,1 @@
+sudo docker run -it --name webnova_eddie --mount "type=bind,src=$(pwd)/input_queue,target=/home/eddiechang091/input_queue" eddie091/webnova_deforestation bash
